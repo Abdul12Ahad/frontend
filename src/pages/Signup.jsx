@@ -15,8 +15,10 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("/auth/signup", form);
+      console.log("request sent")
+      const res = await axios.post("/api/auth/signup", form);
       setUser(res.data.user);
+      console.log("before navigation")
       navigate("/dashboard");
     } catch (err) {
       alert(err.response?.data?.message || "Signup failed");
