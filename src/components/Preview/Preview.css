@@ -1,0 +1,32 @@
+.preview {
+  padding-top: 1px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #950740;
+}
+
+.preview h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.mockup-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.page-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.page-img:hover {
+  transform: scale(1.03);
+}

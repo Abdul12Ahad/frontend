@@ -1,0 +1,84 @@
+.auth-page {
+  max-width: 300px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #C3073F;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-page h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.auth-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-page input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+.auth-page input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+.auth-page button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  background-color: #C3073F;
+  color: white;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-page button:hover {
+  background-color: #a10533;
+  transform: translateY(-2px);
+}
+
+.auth-page button:active {
+  transform: translateY(1px);
+}
+
+.google-btn {
+  background-color: #C3073F;
+  color: white;
+  border: 2px solid #ffffff;
+  margin-top: 15px;
+}
+
+.google-btn:hover {
+  background-color: #a10533;
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e6e6e6;
+}
+
+.login-text a {
+  color: rgb(66, 58, 58);
+  text-decoration: underline;
+  font-weight: 500;
+}

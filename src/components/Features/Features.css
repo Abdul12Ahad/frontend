@@ -1,0 +1,31 @@
+.card {
+  background: linear-gradient(135deg, #6F2232, #950740);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(149, 7, 64, 0.5);
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #f0dada;
+}
+
+.card-icons {
+  font-size: 32px;
+  margin-top: 15px;
+}

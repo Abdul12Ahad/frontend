@@ -1,0 +1,130 @@
+/* ---------- Desktop Styles ---------- */
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  z-index: 2;
+  margin: 0 10%;
+}
+
+.logHead {
+  color: #950740;
+  font-size: 30px;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menuBtn {
+  display: none;
+  padding-top: 28px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+
+.menuItems {
+  display: flex;
+  gap: 46px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: #950740;
+  text-decoration: none;
+}
+
+.brain_img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------- Mobile Styles ---------- */
+@media screen and (max-width: 830px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: #1A1A1D;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .outer {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    margin-right: 30px; /* Push menu icon slightly left */
+  }
+
+  .menuBtn {
+    display: block;
+    padding: 0;
+    margin-top: 5px;
+    z-index: 1100;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 8px; /* Push dropdown slightly left */
+    width: 120px;
+    padding: 20px;
+    background: linear-gradient(
+  0deg,
+  rgba(149, 7, 64, 0.8) 0%,
+  rgba(149, 7, 64, 1) 100%
+    );
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+  }
+
+  .menuItems a {
+    color: #f7c5d6;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+}
+
+
+/* Fallback for menu open outside media query */
+.menuOpen {
+  display: flex;
+  z-index: 1;
+}

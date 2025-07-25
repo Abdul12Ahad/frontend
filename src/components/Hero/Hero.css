@@ -1,0 +1,91 @@
+.hero {
+  color: white;
+  background-color: rgba(149, 7, 64, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imag {
+  width: 180px;
+  animation: float 3s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.info {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.auth-buttons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.get-started-btn {
+  background-color: #950740;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #6f0430;
+}
+
+.login-text {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.login-text a {
+  color: #950740;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 830px) {
+  .hero {
+    margin-top: 200px;
+  }
+
+  .imag {
+    width: 140px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+}
